@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <!-- <link rel="shortcut icon" href="./SweetMarine.png" type="image/x-icon"> -->
+    <link rel="stylesheet" href="style.css">
+    <title>UTICKET - Inicio de sesión</title>
+</head>
+<body>
+    <main class="container-login">
+        <section class="container-div">
+            <div class="log-in">
+                <h2 class="inicioSesion">
+                    Inicio de sesión
+                </h2>
+                <form id = "frm-login" action="">
+                    <div class="user-pass">
+                        <i class="fas fa-user"></i>
+                        <input type="text" id = "username" placeholder="Nombre de usuario" required>
+                    </div>
+                    <br>
+                    <div class="user-pass">
+                        <i class="fas fa-lock"></i>
+                        <input type="password" id="password" placeholder="Ingrese su contraseña" required>
+                    </div>
+                    <a id ="crearCuenta"href="./Singup.html" rel = "noopener noreferrer">¿No tienes cuenta?</a>
+                    <button  class = "myButton" value="">Iniciar sesión</button>
+                </form>
+            </div>
+        </section>
+        </main>
+
+    <script src="loginApp.js" type="module"></script>
+</body>
+</html>

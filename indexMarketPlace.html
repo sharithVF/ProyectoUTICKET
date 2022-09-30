@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Sweet Marine - Market place</title>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body class="body-market">
+    <header class="header-market">
+        <h1>UTICKET</h1>
+    </header>
+    <nav class="container5-nav">
+      <ul class="ul-5">
+
+        <div class="divList">
+          <nav class="menuDesplegable">
+            <ul class="menuHorizontal">
+            <li>
+              <i class="fas fa-bars"></i>
+              <ul class="menuVertical">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="indexMarketPlace.html">Tienda</a></li>
+                <li><a href="Login.html">Cerrar Sesion</a></li>
+              </ul>
+            </li>
+          </ul>
+        </nav>
+      </div>
+        <div class="categorias">
+          <select name="" id="filterCategories">
+            <option value="">Ciudad</option>
+            <option value="Bogotá">Bogotá</option>
+            <option value="Medellín">Medellín</option>
+            <option value="Cali">Cali</option>
+            <option value="Cajicá">Cajicá</option>
+            <option value="Bucaramanga">Bucaramanga</option>
+          </select>
+  
+          <select name="" id="filterPrice">
+            <option value="">Precio</option>
+            <option value="40.000 a 200.000">40.000 a 200.000</option>
+            <option value="200.000 a 450.000">200.000 a 450.000</option>
+            <option value="450.000 a 600.000">450.000 a 600.000</option>
+            <option value="Mayor a 1'000.000">Mayor a 1'000.000</option>
+          </select>
+        </div>
+        
+        <div class="divList2">
+
+        </div>
+      </ul>
+  </nav>
+  <div class="slider">
+    <ul>
+      <li><img src="./image/bogota.jpg" alt=""></li>
+      <li><img src="./image/megaland.jpg" alt=""></li>
+      <li><img src="./image/anuncio.jpg" alt=""></li>
+      <li><img src="./image/wild.jpg" alt=""></li>
+    </ul>
+  </div>
+        <div class="modal-container">
+          <div class="modal modal-close">
+            <p class="close">X</p>
+            <div class="formulario">
+              <form>
+                <label>
+                  <div class="boletasDisponibles2">
+                    <div><p>Boletas disponibles</p></div>
+                  </div>
+                  <div class="boletasDisponibles3">
+                    <p class = "boletasDisponibles"></p>
+                  </div>
+                  
+                  <div class="nombreTelefono">
+                  <p class="p1">Nombre completo</p>
+                  <p class="p2">Teléfono</p>
+                </div>
+                  <div class="nombreTelefono2">
+                    <input class ="nombreInput" type="text" placeholder="ingrese su nombre">
+                    <input class ="telefono" type="number" placeholder="ingrese su numero de telefono" >
+                  </div>
+
+                  <div class="correoCantidad">
+                    <p class="p3">Correo electronico</p>
+                    <p class="p4">Cantidad Boletas</p>
+                  </div>
+
+                  <div class="correoCantidad2">
+                    <input type="email" placeholder="ingrese su correo"  class="correo">
+                    <input type="number" placeholder="Ingrese la cantidad" class="cantidadBoletas" >
+                  </div>
+
+                  <div class="formCuenta">
+                    <p class="p5">Forma de pago</p>
+                    <p class="p6">Numero de cuenta</p>
+                  </div>
+
+                  <div class="formCuenta2">
+                    <select  class="formaPago"name="formaPago" id=""placeholder="seleccione" >
+                    <option >seleccione una opción</option>
+                    <option value="VISA">VISA</option>
+                    <option value="MasterCard">MasterCard</option>
+                    <option value="AMERICAN EXPRESS">AMERICAN EXPRESS</option>
+                    <option value="Bancolombia">Bancolombia</option>
+                    </select>
+
+                    <input class="numeroCuenta" type="number" placeholder="ingrese su numero de cuenta" >
+                  </div>
+
+                </label>
+              </form>
+            </div>
+            <div class="contButton">
+              <button class="btnComprar">Comprar</button>
+            </div>
+          </div>
+        </div>
+    <select name="" id="select-products">
+        <option value="" >Selecciona Algún producto</option>      
+      </select>   
+      
+
+    <main id="main-market"></main>
+  
+    <script src="appMarket.js" type="module"></script>
+    <script src="firebase.js" type="module"></script>
+</body>
+</html>
